@@ -34,8 +34,8 @@ Hey
 
 
         <p>
-Auto Complete
-          <vue-autocomplete
+Auto Complete Should appear next to this
+          <vue-autocompletion
             @key-press="updateAutoCompleteItems"
             name="vehicleName"
             placeholder="aaa"
@@ -68,7 +68,7 @@ Auto Complete
             }
         },
         components: {
-            'vue-autocomplete':VueAutocompletion
+            'vue-autocompletion':VueAutocompletion
         },
         methods: {
 

@@ -35,7 +35,7 @@ Hey
 
         <p>
 Auto Complete
-          <autocomplete
+          <vue-autocomplete
             @key-press="updateAutoCompleteItems"
             name="vehicleName"
             placeholder="aaa"
@@ -55,7 +55,7 @@ Auto Complete
 </template>
 
 <script>
-    import vueAutocompletion from 'vue-autocompletion'
+    import VueAutocompletion from 'vue-autocompletion'
     export default {
         name: 'Welcome',
         data () {
@@ -68,7 +68,7 @@ Auto Complete
             }
         },
         components: {
-            'autocomplete':vueAutocompletion
+            'vue-autocomplete':VueAutocompletion
         },
         methods: {
 

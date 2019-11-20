@@ -1,5 +1,17 @@
 # client
 
+This is a demo of https://stackoverflow.com/questions/58959834/vue-plugin-learning-after-publish-or-local-test-causes-failed-to-mount-compone
+
+```
+ npm -version
+6.12.1
+
+node --version
+v13.1.0
+
+```
+
+
 > A Vue.js project
 
 ## Build Setup

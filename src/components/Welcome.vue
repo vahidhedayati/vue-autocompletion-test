@@ -39,7 +39,7 @@ Auto Complete Should appear next to this
             @key-press="updateAutoCompleteItems"
             name="vehicleName"
             placeholder="aaa"
-            :selected="{id:'a',vehicleName:'alpha car'}"
+            :selected="{id:'a',vehicleName:'vehicle 1'}"
             key-field="id" value-field="vehicleName"
             :items="vehicles" />
 
@@ -64,7 +64,11 @@ Auto Complete Should appear next to this
                 serverInfo: null,
                 showLinks: false,
                 serverURL: process.env.SERVER_URL,
-                vehicles:[{id:'a',vehicleName:'alpha car'},{id:'a0', vehicleName:'zyz vehic 01'},{id:'a1', vehicleName:'abc vehicle aa02'},{id:'a2', vehicleName:'vehicle03'},{id:'a3', vehicleName:'vehicle03'}]
+                vehicles:[{id:'a',vehicleName:'vehicle 01'},{id:'a0', vehicleName:'zyz vehice 01'},
+                    {id:'a1', vehicleName:'abc vehicle 02'},{id:'a2', vehicleName:'vehicle 03'},{id:'a3', vehicleName:'vehicle 03'},
+                    {id:'a4', vehicleName:'abc vehicle 04'},{id:'a5', vehicleName:'vehicle 05'},{id:'a6', vehicleName:'vehicle 06'},
+                    {id:'a7', vehicleName:'abc vehicle 07'},{id:'a8', vehicleName:'vehicle 08'},{id:'a9', vehicleName:'vehicle 09'}
+                ]
             }
         },
         components: {

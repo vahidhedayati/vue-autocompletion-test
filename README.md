@@ -1,6 +1,9 @@
 # client
 
-This is a demo of https://stackoverflow.com/questions/58959834/vue-plugin-learning-after-publish-or-local-test-causes-failed-to-mount-compone
+This is a demo of  vue-autocompletion plugin which works from 1.0.8+ revision onwards  
+
+
+https://stackoverflow.com/questions/58959834/vue-plugin-learning-after-publish-or-local-test-causes-failed-to-mount-compone
 
 ```
  npm -version

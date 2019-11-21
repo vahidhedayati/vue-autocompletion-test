@@ -14,10 +14,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "module": "^1.2.5",
     "uiv": "^0.14.4",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
-    "vue-autocompletion": "^1.0.7"
+    "vue-autocompletion": "file:../vue-autocompletion",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

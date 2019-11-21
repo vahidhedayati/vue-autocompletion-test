@@ -3,14 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import vueAutocompletion from 'vue-autocompletion'
+import VueAutocompletion from 'vue-autocompletion'
 import * as uiv from 'uiv'
 import './assets/css/bootstrap.css'
 import './assets/css/grails.css'
 import './assets/css/main.css'
 
 Vue.config.productionTip = false
-Vue.use(vueAutocompletion)
+Vue.use(VueAutocompletion)
 Vue.use(uiv)
 /* eslint-disable no-new */
 new Vue({

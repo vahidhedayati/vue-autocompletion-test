@@ -9,6 +9,15 @@ import './assets/css/bootstrap.css'
 import './assets/css/grails.css'
 import './assets/css/main.css'
 
+/**
+ * You should be able to disable VeeValidate 2 lines below
+ * this and still load up Welcome2.vue with no issues
+ *
+ **/
+import VeeValidate from 'vee-validate';
+Vue.use(VeeValidate, { inject: false });
+
+
 Vue.config.productionTip = false
 Vue.use(VueAutocompletion)
 Vue.use(uiv)

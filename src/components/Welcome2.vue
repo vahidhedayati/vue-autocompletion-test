@@ -40,13 +40,13 @@
 
         <p>
 Auto Complete Should appear next to this
-          <vu-autocompletion-valid
+          <vue-autocompletion
             @key-press="updateAutoCompleteItems"
             name="vehicleName"
-            validation='required|max:50'
-            :validationErrors="validationErrors"
+
+
             placeholder="aaa"
-            :selected="{}"
+            :selected="{id:'a',vehicleName:'vehicle 1'}"
             key-field="id" value-field="vehicleName"
             :items="vehicles" />
 
@@ -62,12 +62,10 @@ Auto Complete Should appear next to this
 </template>
 
 <script>
-    import {VuAutocompletionValid} from 'vue-autocompletion'
+
     export default {
         name: 'Welcome',
-        $_veeValidate: {
-            validator: 'new'
-        },
+
         data () {
             return {
                 msg: 'Welcome',
@@ -83,7 +81,7 @@ Auto Complete Should appear next to this
             }
         },
         components: {
-            VuAutocompletionValid
+            VueAutocompletion
         },
         methods: {
 

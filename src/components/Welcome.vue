@@ -40,18 +40,18 @@
 
         <p>
 Auto Complete Should appear next to this
-          <vue-autocompletion-valid
+          <vue-autocompletion-valid v-model="vehicle"
             @key-press="updateAutoCompleteItems"
             name="vehicleName"
             validation='required|max:50'
             :validationErrors="validationErrors"
             placeholder="aaa"
-            :selected="{}"
+            :selected="vehicle"
             key-field="id" value-field="vehicleName"
             :items="vehicles" />
 
         </p>
-
+        Current Vehicle is {{vehicle}}
 
       </section>
     </div>
@@ -74,6 +74,7 @@ Auto Complete Should appear next to this
                 serverInfo: null,
                 validationErrors:[],
                 showLinks: false,
+                vehicle:{id:'',name:''},
                 serverURL: process.env.SERVER_URL,
                 vehicles:[{id:'a',vehicleName:'vehicle 01'},{id:'a0', vehicleName:'zyz vehice 01'},
                     {id:'a1', vehicleName:'abc vehicle 02'},{id:'a2', vehicleName:'vehicle 03'},{id:'a3', vehicleName:'vehicle 03'},

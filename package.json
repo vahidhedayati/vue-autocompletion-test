@@ -18,6 +18,7 @@
     "uiv": "^0.14.4",
     "vue": "^2.5.2",
     "vue-autocompletion": "file:../vue-autocompletion",
+    "vue-field-select": "file:../vue-field-select",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

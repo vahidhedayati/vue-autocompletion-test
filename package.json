@@ -17,8 +17,6 @@
     "module": "^1.2.5",
     "uiv": "^0.14.4",
     "vue": "^2.5.2",
-    "vue-autocompletion": "file:../vue-autocompletion",
-    "vue-field-select": "file:../vue-field-select",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -82,7 +80,9 @@
     "@fortawesome/vue-fontawesome": "^0.1.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/free-regular-svg-icons": "^5.11.2"
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "vue-field-select": "^1.1.5",
+    "vue-autocompletion": "^1.1.5"
   },
   "engines": {
     "node": ">= 6.0.0",

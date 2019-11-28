@@ -3,6 +3,12 @@
 This is a demo of  vue-autocompletion plugin which works from 1.0.8+ revision onwards  
 
 
+##### [vue-autocompletion source/docs](https://github.com/vahidhedayati/vue-autocompletion)
+##### [vue-field-select source/docs](https://github.com/vahidhedayati/vue-field-select)
+
+#### [YouTube demo video](https://www.youtube.com/watch?v=8gjKhyUlEro)
+
+
 https://stackoverflow.com/questions/58959834/vue-plugin-learning-after-publish-or-local-test-causes-failed-to-mount-compone
 
 ```

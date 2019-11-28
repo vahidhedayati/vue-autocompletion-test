@@ -138,17 +138,20 @@
                     {id:'a4', vehicleName:'abc vehicle 04'},{id:'a5', vehicleName:'vehicle 05'},{id:'a6', vehicleName:'vehicle 06'},
                     {id:'a7', vehicleName:'abc vehicle 07'},{id:'a8', vehicleName:'vehicle 08'},{id:'a9', vehicleName:'vehicle 09'}
                 ],
+
                 vehicles1:[{id:'a',name:'vehicle 01'},{id:'a0', name:'zyz vehicle 01'},
                     {id:'a1', name:'abc vehicle 02'},{id:'a2', name:'vehicle 03'},{id:'a3', name:'vehicle 03'},
                     {id:'a4', name:'abc vehicle 04'},{id:'a5', name:'vehicle 05'},{id:'a6', name:'vehicle 06'},
                     {id:'a7', name:'abc vehicle 07'},{id:'a8', name:'vehicle 08'},{id:'a9', name:'vehicle 09'}],
                 currentEdit1: {id:'', vehicle:{id:'a', name:'vehicle 01'}, someOtherProperty:''},
 
+
+
                 vehicles2:[{vhecId:'a',vehicleName:'vehicle 01'},{vhecId:'a0', vehicleName:'zyz vehicle 01'},
                     {vhecId:'a1', vehicleName:'abc vehicle 02'},{vhecId:'a2', vehicleName:'vehicle 03'},{vhecId:'a3', vehicleName:'vehicle 03'},
                     {vhecId:'a4', vehicleName:'abc vehicle 04'},{vhecId:'a5', vehicleName:'vehicle 05'},{vhecId:'a6', vehicleName:'vehicle 06'},
                     {vhecId:'a7', vehicleName:'abc vehicle 07'},{vhecId:'a8', vehicleName:'vehicle 08'},{vhecId:'a9', vehicleName:'vehicle 09'}],
-                currentEdit2: {id:'', vehicleId:'',vehicName:'', someOtherProperty:''},
+                currentEdit2: {id:'', vehicleId:'a',vehicName:'vehicle 01', someOtherProperty:''},
                 vehicles3:[ {id:'a',name:'vehicle 01', colour:'red', chassisNumber:'x', steering:'Power'},
                     {id:'a0', name:'zyz vehicle 01',colour:'red', chassisNumber:'x', steering:'Power'},
                     {id:'a1', name:'abc vehicle 02',colour:'red', chassisNumber:'x', steering:'Power'},

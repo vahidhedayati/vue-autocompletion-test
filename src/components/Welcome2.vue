@@ -9,37 +9,42 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/#">
-            Hi :)
-          </a>
+
+          <router-link :to="{name:'complex'}" >
+            Complex
+          </router-link>
           <router-link :to="{name:'nonvalidation'}" >
             Non validation
           </router-link>
+
           <router-link :to="{name:'Welcome'}" >
             Validation
           </router-link>
         </div>
-        <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-          <ul class="nav navbar-nav navbar-right">
 
-        <li>Presto</li>
-
-          </ul>
-        </div>
       </div>
     </div>
 
-    <div class="svg" role="presentation">
-   Nice!
-    </div>
+
 
     <div id="content" role="main">
+      <router-link :to="{name:'complex'}" >
+        Complex
+      </router-link>
+
+      <router-link :to="{name:'nonvalidation'}" >
+        Non validation
+      </router-link>
+
+      <router-link :to="{name:'Welcome'}" >
+        Validation
+      </router-link>
       <section class="row colset-2-its">
         <h1>Test for vue-autocompletion  &  vue-field-select </h1>
 
 
 
-          0. vue-autocompletio
+          0. vue-autocompletion
 
           <vue-autocompletion v-model="vehicle"
             @key-press="updateAutoCompleteItems"
@@ -96,7 +101,6 @@
       </section>
     </div>
 
-    <div class="footer" role="contentinfo"></div>
 
   </div>
 </template>
@@ -109,12 +113,11 @@
 
         data () {
             return {
-                msg: 'Welcome',
-                serverInfo: null,
+
+
                 validationErrors:[],
                 vehicle:{id:'a',vehicleName:'vehicle 01'},
-                showLinks: false,
-                serverURL: process.env.SERVER_URL,
+
                 vehicles:[{id:'a',vehicleName:'vehicle 01'},{id:'a0', vehicleName:'zyz vehice 01'},
                     {id:'a1', vehicleName:'abc vehicle 02'},{id:'a2', vehicleName:'vehicle 03'},{id:'a3', vehicleName:'vehicle 03'},
                     {id:'a4', vehicleName:'abc vehicle 04'},{id:'a5', vehicleName:'vehicle 05'},{id:'a6', vehicleName:'vehicle 06'},

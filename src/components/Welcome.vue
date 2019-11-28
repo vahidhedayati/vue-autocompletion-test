@@ -9,31 +9,38 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/#">
-            Hi :)
-          </a>
+
+          <router-link :to="{name:'complex'}" >
+            Complex
+          </router-link>
           <router-link :to="{name:'nonvalidation'}" >
             Non validation
           </router-link>
+
           <router-link :to="{name:'Welcome'}" >
             Validation
           </router-link>
         </div>
-        <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-          <ul class="nav navbar-nav navbar-right">
 
-        <li>Presto</li>
-
-          </ul>
-        </div>
       </div>
     </div>
 
-    <div class="svg" role="presentation">
-   Nice!
-    </div>
+
 
     <div id="content" role="main">
+      <router-link :to="{name:'complex'}" >
+       Complex
+      </router-link>
+
+      <router-link :to="{name:'nonvalidation'}" >
+        Non validation
+      </router-link>
+
+      <router-link :to="{name:'Welcome'}" >
+        Validation
+      </router-link>
+
+
       <section class="row colset-2-its">
         <h1>Test for vue-autocompletion-valid , vue-field-select & vue-field-select-valid </h1>
 
@@ -103,7 +110,7 @@
       </section>
     </div>
 
-    <div class="footer" role="contentinfo"></div>
+
 
   </div>
 </template>
@@ -119,13 +126,13 @@
         },
         data () {
             return {
-                msg: 'Welcome',
-                serverInfo: null,
+
+
                 validationErrors:[],
-                showLinks: false,
+
                 vehicle:{id:'',name:''},
 
-                serverURL: process.env.SERVER_URL,
+
                 vehicles:[{id:'a',vehicleName:'vehicle 01'},{id:'a0', vehicleName:'zyz vehice 01'},
                     {id:'a1', vehicleName:'abc vehicle 02'},{id:'a2', vehicleName:'vehicle 03'},{id:'a3', vehicleName:'vehicle 03'},
                     {id:'a4', vehicleName:'abc vehicle 04'},{id:'a5', vehicleName:'vehicle 05'},{id:'a6', vehicleName:'vehicle 06'},
@@ -135,7 +142,8 @@
                     {id:'a1', name:'abc vehicle 02'},{id:'a2', name:'vehicle 03'},{id:'a3', name:'vehicle 03'},
                     {id:'a4', name:'abc vehicle 04'},{id:'a5', name:'vehicle 05'},{id:'a6', name:'vehicle 06'},
                     {id:'a7', name:'abc vehicle 07'},{id:'a8', name:'vehicle 08'},{id:'a9', name:'vehicle 09'}],
-                currentEdit1: {id:'', vehicle:{id:'', name:''}, someOtherProperty:''},
+                currentEdit1: {id:'', vehicle:{id:'a', name:'vehicle 01'}, someOtherProperty:''},
+
                 vehicles2:[{vhecId:'a',vehicleName:'vehicle 01'},{vhecId:'a0', vehicleName:'zyz vehicle 01'},
                     {vhecId:'a1', vehicleName:'abc vehicle 02'},{vhecId:'a2', vehicleName:'vehicle 03'},{vhecId:'a3', vehicleName:'vehicle 03'},
                     {vhecId:'a4', vehicleName:'abc vehicle 04'},{vhecId:'a5', vehicleName:'vehicle 05'},{vhecId:'a6', vehicleName:'vehicle 06'},

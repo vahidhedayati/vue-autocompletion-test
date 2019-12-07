@@ -17,9 +17,14 @@
     "module": "^1.2.5",
     "uiv": "^0.14.4",
     "vue": "^2.5.2",
+    "vue-paginater": "file:../vue-paginater",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
@@ -68,6 +73,9 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vee-validate": "^2.2.13",
+    "vue-autocompletion": "^1.1.7",
+    "vue-field-select": "^1.1.5",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
@@ -75,14 +83,7 @@
     "webpack": "^3.12.0",
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0",
-    "vee-validate": "^2.2.13",
-    "@fortawesome/vue-fontawesome": "^0.1.6",
-    "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/free-regular-svg-icons": "^5.11.2",
-    "vue-field-select": "^1.1.5",
-    "vue-autocompletion": "^1.1.5"
+    "webpack-merge": "^4.1.0"
   },
   "engines": {
     "node": ">= 6.0.0",

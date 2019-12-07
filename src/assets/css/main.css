@@ -213,7 +213,9 @@ fieldset,
   display: block;
   margin-left: 27%;
 }
-
+text-white {
+  color: #FFF !important;
+}
 label {
   cursor: pointer;
   display: inline-block;

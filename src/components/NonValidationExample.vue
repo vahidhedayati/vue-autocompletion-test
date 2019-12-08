@@ -102,13 +102,14 @@
 <br>
           When you click X every sub compontent in additionalProperties is also cleared
 
-          <vue-autocompletion v-model="currentEdit5"
+          <vue-autocompletion  v-model="currentEdit5"
                               @key-press="updateAutoCompleteItems"
                               name="vehicleName"
                               placeholder="aaa"
+                               @search-key="componentKey++"
                               :overrideClearFunction="true"
                               :selected="currentEdit5"
-                              :setTimeOut="true"
+
                               key-field="id" value-field="vehicleName" remote-value="name"
                               :additionalProperties="[{keyField:'chassis', remoteKey:'chassisNumber'},
                                   {objectName:'country', keyField:'id', remoteKey:'countryId', valueField:'name', remoteValue:'countryName'},
@@ -122,13 +123,13 @@
           So therefore if objectName is given it must be hanging off the current v-model object name
           <br>
           When you click X every sub compontent in additionalProperties is also cleared
-          <vue-autocompletion v-model="currentEdit5.country"
+          <vue-autocompletion  :key="componentKey" v-model="currentEdit5.country"
                                     @key-press="updateAutoCompleteItems"
                                     name="name"
 
                                     placeholder="aaa"
                                     :overrideClearFunction="true"
-                              :setTimeOut="true"
+
                                     :selected="currentEdit5.country"
                                     :items="vehicles3" />
 
@@ -212,7 +213,7 @@
         data () {
             return {
 
-
+                componentKey:0,
                 validationErrors:[],
                 vehicle:{id:'a',vehicleName:'vehicle 01'},
                 vehicle2:{id:'a',vehicleName:'vehicle 01'},

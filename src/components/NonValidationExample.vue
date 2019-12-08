@@ -124,7 +124,7 @@
           So therefore if objectName is given it must be hanging off the current v-model object name
           <br>
           When you click X every sub compontent in additionalProperties is also cleared
-          <vue-autocompletion-valid v-model="currentEdit5.country"
+          <vue-autocompletion v-model="currentEdit5.country"
                                     @key-press="updateAutoCompleteItems"
                                     name="name"
                                     validation='required|max:50'

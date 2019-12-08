@@ -65,8 +65,7 @@
           <vue-autocompletion v-model="vehicle2"
                               @key-press="updateAutoCompleteItems"
                               name="vehicleName"
-                              :overrideClearFunction="false"
-
+                              :overrideClearFunction="true"
                               placeholder="aaa"
                               :selected="vehicle2"
                               key-field="id" value-field="vehicleName"
@@ -83,7 +82,7 @@
           <vue-autocompletion v-model="vehicle3"
                               @key-press="updateAutoCompleteItems"
                               name="vehicleName"
-                              :overrideClearFunction="false"
+                              :overrideClearFunction="true"
                               placeholder="aaa"
                               :selected="vehicle3"
                               key-field="id" value-field="vehicleName"
@@ -106,11 +105,10 @@
           <vue-autocompletion v-model="currentEdit5"
                               @key-press="updateAutoCompleteItems"
                               name="vehicleName"
-                              validation='required|max:50'
-                              :validationErrors="validationErrors"
                               placeholder="aaa"
                               :overrideClearFunction="true"
                               :selected="currentEdit5"
+                              :setTimeOut="true"
                               key-field="id" value-field="vehicleName" remote-value="name"
                               :additionalProperties="[{keyField:'chassis', remoteKey:'chassisNumber'},
                                   {objectName:'country', keyField:'id', remoteKey:'countryId', valueField:'name', remoteValue:'countryName'},
@@ -127,10 +125,10 @@
           <vue-autocompletion v-model="currentEdit5.country"
                                     @key-press="updateAutoCompleteItems"
                                     name="name"
-                                    validation='required|max:50'
-                                    :validationErrors="validationErrors"
+
                                     placeholder="aaa"
                                     :overrideClearFunction="true"
+                              :setTimeOut="true"
                                     :selected="currentEdit5.country"
                                     :items="vehicles3" />
 

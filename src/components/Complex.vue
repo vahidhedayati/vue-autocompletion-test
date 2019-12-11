@@ -1,39 +1,8 @@
 <template>
   <div>
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <ul class="nav navbar-nav nav pull-right   ">
-          <li><router-link :to="{name:'complex'}" >
-            Complex
-          </router-link>
-          </li>
-            <li>
-          <router-link :to="{name:'nonvalidation'}" >
-            Non validation
-          </router-link>
-            </li>
-            <li>
-          <router-link :to="{name:'Welcome'}" >
-            Validation
-          </router-link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+    <navigation/>
     <div id="content" role="main">
-
-
-
+      <links/>
       <section class="row colset-2-its">
         <h1>Test for vue-autocompletion-valid complex</h1>
 
@@ -133,6 +102,8 @@
     import {VueAutocompletionValid} from 'vue-autocompletion'
     import VueFieldSelect from 'vue-field-select'
     import {VueFieldSelectValid} from 'vue-field-select'
+    import Navigation from './Navigation'
+    import Links from './Links'
     export default {
         name: 'Welcome',
         $_veeValidate: {
@@ -169,6 +140,8 @@
         },
         components: {
             'auto-complete':VueAutocompletionValid,
+            Navigation,
+            Links
         },
         methods: {
             setValue:function(index) {

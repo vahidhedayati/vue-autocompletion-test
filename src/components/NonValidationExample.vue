@@ -1,44 +1,8 @@
 <template>
   <div>
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <router-link :to="{name:'complex'}" >
-            Complex
-          </router-link>
-          <router-link :to="{name:'nonvalidation'}" >
-            Non validation
-          </router-link>
-
-          <router-link :to="{name:'validation'}" >
-            Validation
-          </router-link>
-        </div>
-
-      </div>
-    </div>
-
-
-
+    <navigation/>
     <div id="content" role="main">
-      <router-link :to="{name:'complex'}" >
-        Complex
-      </router-link>
-
-      <router-link :to="{name:'nonvalidation'}" >
-        Non validation
-      </router-link>
-
-      <router-link :to="{name:'validation'}" >
-        Validation
-      </router-link>
+      <links/>
       <section class="row colset-2-its well">
         <h1>Test for vue-autocompletion  &  vue-field-select </h1>
 
@@ -207,6 +171,8 @@
 <script>
     import VueAutocompletion from 'vue-autocompletion'
     import VueFieldSelect from 'vue-field-select'
+    import Navigation from './Navigation'
+    import Links from './Links'
     export default {
         name: 'Welcome',
 
@@ -250,6 +216,8 @@
         components: {
             VueAutocompletion,
             VueFieldSelect,
+            Navigation,
+            Links
         },
         methods: {
 

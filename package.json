@@ -17,7 +17,7 @@
     "module": "^1.2.5",
     "uiv": "^0.14.4",
     "vue": "^2.5.2",
-    "vue-paginater": "file:../vue-paginater",
+
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -75,7 +75,8 @@
     "url-loader": "^0.5.8",
     "vee-validate": "^2.2.13",
     "vue-autocompletion": "^1.1.10",
-    "vue-field-select": "^1.1.5",
+    "vue-paginater": "file:../vue-paginater",
+    "vue-field-select": "file:../vue-field-select",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
